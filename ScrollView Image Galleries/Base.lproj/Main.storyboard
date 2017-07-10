@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y2x-Wl-KxV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,23 +25,35 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aq2-Gq-76U">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IW0-Kb-l0p">
+                                    <imageView tag="101" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IW0-Kb-l0p">
                                         <rect key="frame" x="8" y="45" width="359" height="264"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="264" id="u4s-6V-SZq"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Rqm-X3-jaW" appends="YES" id="Rtl-IF-gRd"/>
+                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bDf-Rs-8an">
+                                    <imageView tag="102" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bDf-Rs-8an">
                                         <rect key="frame" x="8" y="317" width="359" height="264"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="264" id="scf-u9-yQI"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="b5K-Ru-sgY" appends="YES" id="Omb-GD-OnY"/>
+                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4kh-8t-Vep">
+                                    <imageView tag="103" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4kh-8t-Vep">
                                         <rect key="frame" x="8" y="589" width="359" height="403"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="403" id="Bfw-UZ-RF5"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="DI7-dc-ttx" appends="YES" id="u1h-OA-TXg"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -73,9 +85,25 @@
                         <outlet property="image1" destination="IW0-Kb-l0p" id="Ut0-iv-mc4"/>
                         <outlet property="image2" destination="bDf-Rs-8an" id="yMC-Ky-d3S"/>
                         <outlet property="image3" destination="4kh-8t-Vep" id="VDn-NF-uzV"/>
+                        <segue destination="y2x-Wl-KxV" kind="showDetail" identifier="segueWay" id="c7Q-zs-S0z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Rqm-X3-jaW">
+                    <connections>
+                        <action selector="changePageWithTap:" destination="BYZ-38-t0r" id="nLQ-oy-P24"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="b5K-Ru-sgY">
+                    <connections>
+                        <action selector="tap2:" destination="BYZ-38-t0r" id="ykE-sx-ZkI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="DI7-dc-ttx">
+                    <connections>
+                        <action selector="tap3:" destination="BYZ-38-t0r" id="wiX-F3-9vV"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="135.832083958021"/>
         </scene>
@@ -97,6 +125,14 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="robot3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pH9-Py-Ni8">
                                         <rect key="frame" x="8" y="40" width="359" height="209"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdm-40-7V6">
+                                        <rect key="frame" x="164" y="524" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="ebF-D1-LWf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="pH9-Py-Ni8" secondAttribute="trailing" constant="8" id="RVp-jJ-fXQ"/>
@@ -115,7 +151,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myImage" destination="pH9-Py-Ni8" id="k9K-We-Ujr"/>
+                        <outlet property="myImage" destination="pH9-Py-Ni8" id="uMQ-4h-nQ1"/>
                         <outlet property="scrollView2" destination="WaS-yI-HG4" id="5gY-pR-ckT"/>
                     </connections>
                 </viewController>

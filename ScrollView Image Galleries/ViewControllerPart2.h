@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ViewController.h"
 @interface ViewControllerPart2 : UIViewController
-
+-(void)configureWithImage:(UIImage *)paramImage;
 @end

@@ -67,11 +67,11 @@
 			children = (
 				7EA531AF1F13CA390087257A /* ViewController.h */,
 				7EA531B01F13CA390087257A /* ViewController.m */,
-				7EA531B21F13CA390087257A /* Main.storyboard */,
 				7EA531C41F13D18F0087257A /* ViewControllerPart2.h */,
 				7EA531C51F13D18F0087257A /* ViewControllerPart2.m */,
 				7EA531C01F13CB8D0087257A /* robot2.jpg */,
 				7EA531C11F13CB8D0087257A /* robot3.jpg */,
+				7EA531B21F13CA390087257A /* Main.storyboard */,
 				7EA531A91F13CA390087257A /* Supporting Files */,
 			);
 			path = "ScrollView Image Galleries";
