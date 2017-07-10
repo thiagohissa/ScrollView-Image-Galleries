@@ -26,7 +26,6 @@
     self.scrollView2.maximumZoomScale = 2.0;
     self.scrollView2.minimumZoomScale = 0.2;
     self.myImage.image = self.capturedImage;
-
     
 }
 

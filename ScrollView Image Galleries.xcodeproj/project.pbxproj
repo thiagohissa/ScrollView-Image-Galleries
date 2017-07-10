@@ -16,6 +16,7 @@
 		7EA531C21F13CB8D0087257A /* robot2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EA531C01F13CB8D0087257A /* robot2.jpg */; };
 		7EA531C31F13CB8D0087257A /* robot3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EA531C11F13CB8D0087257A /* robot3.jpg */; };
 		7EA531C61F13D18F0087257A /* ViewControllerPart2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA531C51F13D18F0087257A /* ViewControllerPart2.m */; };
+		7EA531C81F1401BB0087257A /* robot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EA531C71F1401BB0087257A /* robot1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		7EA531C11F13CB8D0087257A /* robot3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robot3.jpg; path = ../../../robot3.jpg; sourceTree = "<group>"; };
 		7EA531C41F13D18F0087257A /* ViewControllerPart2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerPart2.h; sourceTree = "<group>"; };
 		7EA531C51F13D18F0087257A /* ViewControllerPart2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPart2.m; sourceTree = "<group>"; };
+		7EA531C71F1401BB0087257A /* robot1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robot1.jpg; path = ../../../robot1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				7EA531B01F13CA390087257A /* ViewController.m */,
 				7EA531C41F13D18F0087257A /* ViewControllerPart2.h */,
 				7EA531C51F13D18F0087257A /* ViewControllerPart2.m */,
+				7EA531C71F1401BB0087257A /* robot1.jpg */,
 				7EA531C01F13CB8D0087257A /* robot2.jpg */,
 				7EA531C11F13CB8D0087257A /* robot3.jpg */,
 				7EA531B21F13CA390087257A /* Main.storyboard */,
@@ -148,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA531C81F1401BB0087257A /* robot1.jpg in Resources */,
 				7EA531B91F13CA390087257A /* LaunchScreen.storyboard in Resources */,
 				7EA531C31F13CB8D0087257A /* robot3.jpg in Resources */,
 				7EA531C21F13CB8D0087257A /* robot2.jpg in Resources */,
