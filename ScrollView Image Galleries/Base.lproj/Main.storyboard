@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aq2-Gq-76U">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IW0-Kb-l0p">
+                                        <rect key="frame" x="8" y="45" width="359" height="264"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="264" id="u4s-6V-SZq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bDf-Rs-8an">
+                                        <rect key="frame" x="8" y="317" width="359" height="264"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="264" id="scf-u9-yQI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4kh-8t-Vep">
+                                        <rect key="frame" x="8" y="589" width="359" height="403"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="403" id="Bfw-UZ-RF5"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="IW0-Kb-l0p" firstAttribute="trailing" secondItem="Aq2-Gq-76U" secondAttribute="trailingMargin" id="4a0-Ji-ccF"/>
+                                    <constraint firstItem="bDf-Rs-8an" firstAttribute="trailing" secondItem="4kh-8t-Vep" secondAttribute="trailing" id="N1e-qp-yCo"/>
+                                    <constraint firstItem="IW0-Kb-l0p" firstAttribute="trailing" secondItem="bDf-Rs-8an" secondAttribute="trailing" id="ONN-9k-QbS"/>
+                                    <constraint firstItem="4kh-8t-Vep" firstAttribute="top" secondItem="bDf-Rs-8an" secondAttribute="bottom" constant="8" symbolic="YES" id="Prx-SQ-Weg"/>
+                                    <constraint firstItem="IW0-Kb-l0p" firstAttribute="centerX" secondItem="Aq2-Gq-76U" secondAttribute="centerX" id="a95-hj-IiM"/>
+                                    <constraint firstItem="IW0-Kb-l0p" firstAttribute="leading" secondItem="Aq2-Gq-76U" secondAttribute="leadingMargin" id="eFg-OO-UGo"/>
+                                    <constraint firstItem="4kh-8t-Vep" firstAttribute="bottom" secondItem="Aq2-Gq-76U" secondAttribute="bottomMargin" id="hwM-f3-Wys"/>
+                                    <constraint firstItem="IW0-Kb-l0p" firstAttribute="leading" secondItem="bDf-Rs-8an" secondAttribute="leading" id="jxc-7c-MxT"/>
+                                    <constraint firstItem="bDf-Rs-8an" firstAttribute="leading" secondItem="4kh-8t-Vep" secondAttribute="leading" id="qXj-Gj-lHc"/>
+                                    <constraint firstItem="IW0-Kb-l0p" firstAttribute="top" secondItem="Aq2-Gq-76U" secondAttribute="top" constant="45" id="wdh-aG-WVe"/>
+                                    <constraint firstItem="bDf-Rs-8an" firstAttribute="top" secondItem="IW0-Kb-l0p" secondAttribute="bottom" constant="8" symbolic="YES" id="yHg-o0-5sq"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Aq2-Gq-76U" secondAttribute="bottom" id="CSQ-dG-Dx2"/>
+                            <constraint firstAttribute="trailing" secondItem="Aq2-Gq-76U" secondAttribute="trailing" id="O1J-hi-xvk"/>
+                            <constraint firstItem="Aq2-Gq-76U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iPJ-OH-Fxb"/>
+                            <constraint firstItem="Aq2-Gq-76U" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mSk-fR-iuq"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="image1" destination="IW0-Kb-l0p" id="Ut0-iv-mc4"/>
+                        <outlet property="image2" destination="bDf-Rs-8an" id="yMC-Ky-d3S"/>
+                        <outlet property="image3" destination="4kh-8t-Vep" id="VDn-NF-uzV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="135.832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="robot2.jpg" width="350" height="480"/>
+        <image name="robot3.jpg" width="280" height="392"/>
+    </resources>
+</document>
